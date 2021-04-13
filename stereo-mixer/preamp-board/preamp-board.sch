@@ -29,7 +29,7 @@ L Connector:Conn_01x03_Male J5
 U 1 1 6074E0BB
 P 10150 5150
 F 0 "J5" V 10304 4962 50  0000 R CNN
-F 1 "OUT: L G R" V 10213 4962 50  0000 R CNN
+F 1 "OUT: L G R" V 10050 5350 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10150 5150 50  0001 C CNN
 F 3 "~" H 10150 5150 50  0001 C CNN
 	1    10150 5150
@@ -40,7 +40,7 @@ L Connector:Conn_01x03_Male J3
 U 1 1 60750368
 P 6050 5100
 F 0 "J3" V 6204 4912 50  0000 R CNN
-F 1 "R GAIN POT: 1 W G" V 5950 5250 50  0000 R CNN
+F 1 "R GAIN POT" V 5950 5250 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6050 5100 50  0001 C CNN
 F 3 "~" H 6050 5100 50  0001 C CNN
 	1    6050 5100
@@ -51,55 +51,11 @@ L Connector:Conn_01x03_Male J2
 U 1 1 607513D3
 P 4850 5100
 F 0 "J2" V 5004 4912 50  0000 R CNN
-F 1 "L GAIN POT: 1 W G" V 4750 5250 50  0000 R CNN
+F 1 "L GAIN POT" V 4750 5250 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 5100 50  0001 C CNN
 F 3 "~" H 4850 5100 50  0001 C CNN
 	1    4850 5100
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 60752472
-P 7950 3600
-F 0 "C1" V 7698 3600 50  0000 C CNN
-F 1 "47pF" V 7789 3600 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7988 3450 50  0001 C CNN
-F 3 "~" H 7950 3600 50  0001 C CNN
-	1    7950 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 60753D2D
-P 7950 4000
-F 0 "C2" V 7698 4000 50  0000 C CNN
-F 1 "47pF" V 7789 4000 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7988 3850 50  0001 C CNN
-F 3 "~" H 7950 4000 50  0001 C CNN
-	1    7950 4000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 60753EFA
-P 4750 3650
-F 0 "R3" H 4820 3696 50  0000 L CNN
-F 1 "22K" H 4820 3605 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4680 3650 50  0001 C CNN
-F 3 "~" H 4750 3650 50  0001 C CNN
-	1    4750 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 607552CD
-P 5950 3650
-F 0 "R4" H 6020 3696 50  0000 L CNN
-F 1 "22K" H 6020 3605 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5880 3650 50  0001 C CNN
-F 3 "~" H 5950 3650 50  0001 C CNN
-	1    5950 3650
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x03_Male J1
@@ -192,25 +148,15 @@ $EndComp
 Wire Wire Line
 	8600 2650 8800 2650
 Wire Wire Line
-	8800 2650 8800 4000
-Wire Wire Line
-	8800 4000 8500 4000
+	8800 2650 8800 3700
 Wire Wire Line
 	8600 2750 8700 2750
 Wire Wire Line
 	8700 2750 8700 3600
 Wire Wire Line
-	8700 3600 8600 3600
-Wire Wire Line
-	3650 4900 3650 3800
-Wire Wire Line
 	3650 2850 3650 3500
 Wire Wire Line
 	3950 2950 3950 3500
-Wire Wire Line
-	3850 4900 3850 3800
-Wire Wire Line
-	3850 3800 3950 3800
 $Comp
 L power:GND #PWR0103
 U 1 1 6077646D
@@ -223,77 +169,18 @@ F 3 "" H 3150 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 3800 4750 4900
-Wire Wire Line
-	5950 3800 5950 4900
-Wire Wire Line
 	3750 4900 3750 4800
 Wire Wire Line
 	3750 4800 3450 4800
 Wire Wire Line
 	3150 4800 3150 4900
-Connection ~ 3650 3800
-Wire Wire Line
-	3650 3800 3650 3750
-Connection ~ 3850 3800
-Wire Wire Line
-	3850 3800 3850 3750
-Wire Wire Line
-	3750 4800 4950 4800
-Wire Wire Line
-	4950 4800 4950 4900
 Connection ~ 3750 4800
-Wire Wire Line
-	4950 4800 6150 4800
-Wire Wire Line
-	6150 4800 6150 4900
-Connection ~ 4950 4800
-Wire Wire Line
-	4750 3500 4750 2850
 Wire Wire Line
 	3650 2850 4750 2850
 Connection ~ 4750 2850
-Wire Wire Line
-	6050 4900 6050 4700
-Wire Wire Line
-	6050 4700 8600 4700
-Wire Wire Line
-	8600 4700 8600 3600
-Connection ~ 8600 3600
-Wire Wire Line
-	8600 3600 8100 3600
-Wire Wire Line
-	5950 3500 5950 2950
 Connection ~ 5950 2950
 Wire Wire Line
 	5950 2950 3950 2950
-Wire Wire Line
-	4850 4900 4850 4600
-Wire Wire Line
-	4850 4600 8500 4600
-Wire Wire Line
-	8500 4600 8500 4000
-Connection ~ 8500 4000
-Wire Wire Line
-	8500 4000 8100 4000
-Wire Wire Line
-	5950 2950 7050 2950
-Wire Wire Line
-	4750 2850 6950 2850
-Wire Wire Line
-	6950 4000 6950 2850
-Wire Wire Line
-	6950 4000 7800 4000
-Connection ~ 6950 2850
-Wire Wire Line
-	6950 2850 7200 2850
-Wire Wire Line
-	7800 3600 7050 3600
-Wire Wire Line
-	7050 3600 7050 2950
-Connection ~ 7050 2950
-Wire Wire Line
-	7050 2950 7200 2950
 Wire Wire Line
 	10250 2650 8800 2650
 Connection ~ 8800 2650
@@ -301,10 +188,7 @@ Wire Wire Line
 	10050 2750 8700 2750
 Connection ~ 8700 2750
 Wire Wire Line
-	6150 4800 8850 4800
-Wire Wire Line
 	10150 4800 10150 4950
-Connection ~ 6150 4800
 Wire Wire Line
 	10250 2650 10250 4500
 Wire Wire Line
@@ -353,22 +237,22 @@ Connection ~ 3250 4800
 Wire Wire Line
 	3250 4800 3150 4800
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J7
 U 1 1 6072708D
 P 9450 5150
-F 0 "J?" V 9604 4962 50  0000 R CNN
-F 1 "R LEVEL POT: 1 W G" V 9350 5500 50  0000 R CNN
+F 0 "J7" V 9604 4962 50  0000 R CNN
+F 1 "R LEVEL POT" V 9350 5400 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9450 5150 50  0001 C CNN
 F 3 "~" H 9450 5150 50  0001 C CNN
 	1    9450 5150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J6
 U 1 1 607285DD
 P 8750 5150
-F 0 "J?" V 8904 4962 50  0000 R CNN
-F 1 "L LEVEL POT: 1 W G" V 8650 5800 50  0000 R CNN
+F 0 "J6" V 8904 4962 50  0000 R CNN
+F 1 "L LEVEL POT" V 8650 5400 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8750 5150 50  0001 C CNN
 F 3 "~" H 8750 5150 50  0001 C CNN
 	1    8750 5150
@@ -406,4 +290,30 @@ Wire Wire Line
 	9450 4600 10250 4600
 Wire Wire Line
 	10250 4600 10250 4950
+Wire Wire Line
+	3750 4800 8850 4800
+Wire Wire Line
+	4750 2850 4750 4900
+Wire Wire Line
+	5950 2950 5950 4900
+Wire Wire Line
+	3950 3800 3950 4050
+Wire Wire Line
+	3950 4050 3850 4050
+Wire Wire Line
+	3850 4900 3850 4050
+Wire Wire Line
+	3650 4900 3650 3800
+Wire Wire Line
+	4750 2850 7200 2850
+Wire Wire Line
+	5950 2950 7200 2950
+Wire Wire Line
+	6050 3600 6050 4900
+Wire Wire Line
+	6050 3600 8700 3600
+Wire Wire Line
+	4850 3700 8800 3700
+Wire Wire Line
+	4850 3700 4850 4900
 $EndSCHEMATC
