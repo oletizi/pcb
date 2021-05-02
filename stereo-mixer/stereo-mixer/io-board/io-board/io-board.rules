@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 3036)
+    (start_pass_no 7247)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -27,9 +27,19 @@
   )
   (rule
     (width 1143.0)
-    (clear 254.2)
+    (clear 900.0)
     (clear 571.5 (type smd_to_turn_gap))
+    (clear 254.2 (type default_smd))
     (clear 63.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_2000:1000_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -41,10 +51,19 @@
     (attach off)
   )
   (via 
+    "Via[0-1]_2000:1000_um" "Via[0-1]_2000:1000_um" default
+  )
+  (via 
+    "Via[0-1]_2000:1000_um-kicad_default" "Via[0-1]_2000:1000_um" default
+  )
+  (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" default
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_2000:1000_um-kicad_default"
   )
   (via_rule
     default "Via[0-1]_800:400_um" "Via[0-1]_800:400_um-kicad_default"
@@ -74,7 +93,7 @@
     "Net-(J2-Pad8)" "Net-(J2-Pad16)" "Net-(J8-Pad17)" "Net-(J8-Pad4)" "Net-(J10-Pad16)" "Net-(J10-Pad8)" "Net-(J10-Pad6)" "Net-(J10-Pad4)"
     "Net-(J16-Pad17)" "Net-(J16-Pad4)" "Net-(J18-Pad16)" "Net-(J18-Pad8)" "Net-(J18-Pad6)" "Net-(J18-Pad4)" "Net-(J24-Pad4)" "Net-(J24-Pad17)"
     "Net-(J30-Pad17)" "Net-(J30-Pad4)"
-    (clearance_class "kicad_default")
+    (clearance_class default)
     (via_rule kicad_default)
     (rule
       (width 1143.0)
