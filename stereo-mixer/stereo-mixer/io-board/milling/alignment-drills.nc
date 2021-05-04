@@ -1,0 +1,1384 @@
+
+G20 ;set to inches mode, as opposed to mm
+G90 ;absolute distance mode
+G17 ;set helix axis of rotation to Z axis
+G40 ;Cancel cutter radius compensation 
+G49 ;Cancel tool length offset
+G80 ;Cancel motion mode
+
+;raise tool to safety height
+F 1
+G0 Z0.5
+F 60
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
+
+G1 X Y
+G1 Z0
+F 8
+G2 X Y Z-0.5 I0 J-
+F 60
+G1 Z0.5
