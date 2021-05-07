@@ -1,0 +1,22 @@
+{
+  "name": "pcb",
+  "version": "1.0.0",
+  "description": "PCB stuff",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oletizi/pcb.git"
+  },
+  "author": "Orion Letizi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oletizi/pcb/issues"
+  },
+  "homepage": "https://github.com/oletizi/pcb#readme"
+}
