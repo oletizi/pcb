@@ -6,7 +6,7 @@ M48
 ; #@! TF.FileFunction,Plated,1,2,PTH
 FMAT,2
 METRIC
-T1C1.000
+T1C1.300
 %
 G90
 G05
