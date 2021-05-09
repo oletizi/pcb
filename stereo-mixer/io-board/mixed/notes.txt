@@ -1,5 +1,10 @@
 Notes on combination milling/drilling/engraving
 
+o Milling alignment holes and engraving on the back side first is
+  best. The THT holes should be the last operation, since the engraver
+  can get diverted by the holes. Also, if using an oil layer, the oil
+  won't drain through the holes.
+  
 o Top-left alignment hole is:
   Hole 2
      X: 0.9449 in
