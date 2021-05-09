@@ -1,0 +1,32 @@
+Notes on combination milling/drilling/engraving
+
+o Top-left alignment hole is:
+  Hole 2
+     X: 0.9449 in
+     Y: 4.1319 in
+
+     X: 24 mm
+     Y: 104.950
+  Use this to reset zero if there's a crash or something. It's an
+  eyeball job, but it's surprisingly effective. Registration seems
+  within the tolerance of the machine.
+  
+o Engraving speed: 200 mm/min to avoid chatter
+o Engraving depth: -0.15 mm (at least) w/ autoleveling to avoid gaps
+o The autoleveler in bcnc goes NUTS when you test the margin the first
+  time for some reason. Being outside the margin before testing might
+  help. But, you have to be prepared to stop the damned thing or it
+  will race off the end of the work area.
+o The 
+
+o 1 mm drill for THT holes
+o 1 mm mill for alignment holes
+
+o pcb/bin/alignment-holes.sh for generating the helical cut path, but
+  need to tune the excellon file to make sure the hole diamater is set
+  right.
+
+o A layer of oil or W40 on the top of the pcb keeps dust down and
+  seems to keep the tool a little happier.
+
+o Double-sided tape sucks. Much better to use clamps and alignment pins.
