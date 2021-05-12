@@ -4,6 +4,14 @@ o Milling alignment holes and engraving on the back side first is
   best. The THT holes should be the last operation, since the engraver
   can get diverted by the holes. Also, if using an oil layer, the oil
   won't drain through the holes.
+
+o mirror the back side w/ the bounds of the board, not a single
+  point. That will make the top and bottom edges align when flipped so
+  you can reuse a common fixture.
+
+o Trying a multi-pass, multi-depth approach with a speed of 120 mm/min
+  to see if isolation is better. The quality is better, since there is
+  much less vibration.
   
 o Top-left alignment hole is:
   Hole 2
