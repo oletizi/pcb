@@ -1,0 +1,67 @@
+Notes on prototyping
+
+o Stupid Flatcam hacks for getting decent isolation milling with an
+  engraving bit:
+  o Create the isolation routing object w/ a 0.1 mm v-bit
+  o When generating the g-code, change the bit to 0.1 mm circular bit
+  o Set the depth of cut to 0.2 mm
+  o Set feed to 60 mm/min (120 mm/min causes chatter)
+  o ==> Remember to set the spindle speed to something or it probably
+    won't turn on
+  o ==> Set the return X,Y coordinates to 0,0 so if the connection
+    between bcnc and the machine goes snafu after a run, it's easy to
+    recover the zero point. 
+  o Enable multiple passes with a 0.05-0.06 mm depth per pass
+
+  It's lame that you have to tweak it this much, but it seems to
+  deliver more consistent results. And, FlatCam is free, so... if I
+  *really* wanted this fixed, I could always implement it and submit a
+  PR.
+
+
+o It's probably a good idea to have common alignment holes across pcbs
+  so you can build them into fixtures
+
+o Milling alignment holes and engraving on the back side first is
+  best. The THT holes should be the last operation, since the engraver
+  can get diverted by the holes. Also, if using an oil layer, the oil
+  won't drain through the holes.
+
+o mirror the back side w/ the bounds of the board, not a single
+  point. That will make the top and bottom edges align when flipped so
+  you can reuse a common fixture.
+
+o Trying a multi-pass, multi-depth approach with a speed of 120 mm/min
+  to see if isolation is better. The quality is better, since there is
+  much less vibration.
+  
+o Top-left alignment hole is:
+  Hole 2
+     X: 0.9449 in
+     Y: 4.1319 in
+
+     X: 24 mm
+     Y: 104.950
+  Use this to reset zero if there's a crash or something. It's an
+  eyeball job, but it's surprisingly effective. Registration seems
+  within the tolerance of the machine.
+  
+o Engraving speed: 200 mm/min to avoid chatter
+o Engraving depth: -0.15 mm (at least) w/ autoleveling to avoid gaps
+o The autoleveler in bcnc goes NUTS when you test the margin the first
+  time for some reason. Being outside the margin before testing might
+  help. But, you have to be prepared to stop the damned thing or it
+  will race off the end of the work area.
+o The 
+
+o 1 mm drill for THT holes
+o 1 mm mill for alignment holes
+
+o pcb/bin/alignment-holes.sh for generating the helical cut path, but
+  need to tune the excellon file to make sure the hole diamater is set
+  right.
+
+o A layer of oil or W40 on the top of the pcb keeps dust down and
+  seems to keep the tool a little happier.
+
+o Double-sided tape sucks. Much better to use clamps and alignment pins.
