@@ -1,0 +1,349 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 2500 4950 0    50   ~ 0
+L_LEVEL_TERM_A
+Text Label 2500 4750 0    50   ~ 0
+L_LEVEL_WIPER
+Text Label 2500 4550 0    50   ~ 0
+L_OUT
+Text Label 2500 4150 0    50   ~ 0
+R_LEVEL_TERM_A
+Text Label 2500 3950 0    50   ~ 0
+R_LEVEL_WIPER
+Text Label 2500 3750 0    50   ~ 0
+R_OUT
+Text Label 2500 3650 0    50   ~ 0
+R_LEVEL_TERM_B
+Text Label 2500 3250 0    50   ~ 0
+GND
+Text Label 2500 3450 0    50   ~ 0
++15V
+Text Label 2500 3050 0    50   ~ 0
+-15V
+Text Label 2500 4850 0    50   ~ 0
+L_IN
+Text Label 2500 4650 0    50   ~ 0
+R_IN
+Text Label 2500 4250 0    50   ~ 0
+L_GAIN_TERM_A
+Text Label 2500 4050 0    50   ~ 0
+R_GAIN_WIPER
+Text Label 2500 3850 0    50   ~ 0
+R_GAIN_TERM_A
+Text Label 2500 4350 0    50   ~ 0
+L_LEVEL_TERM_B
+$Comp
+L preamp-board-v5-rescue:LM833N-local U1
+U 1 1 60A15CE7
+P 5700 3850
+F 0 "U1" V 5746 3317 50  0000 R CNN
+F 1 "LM833N" V 5655 3317 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" V 5609 3317 50  0001 R CNN
+F 3 "" H 5700 3850 50  0001 L BNN
+	1    5700 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 3050 5400 3150
+Wire Wire Line
+	3850 3450 3850 3150
+Wire Wire Line
+	3850 3150 5300 3150
+$Comp
+L Device:R R3
+U 1 1 60A16C3B
+P 3650 4650
+F 0 "R3" V 3550 4650 50  0000 C CNN
+F 1 "47K" V 3750 4650 50  0000 C CNN
+F 2 "resistors:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3580 4650 50  0001 C CNN
+F 3 "~" H 3650 4650 50  0001 C CNN
+	1    3650 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60A1738E
+P 3900 4850
+F 0 "R4" V 3800 4850 50  0000 C CNN
+F 1 "47K" V 4000 4850 50  0000 C CNN
+F 2 "resistors:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3830 4850 50  0001 C CNN
+F 3 "~" H 3900 4850 50  0001 C CNN
+	1    3900 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4650 5900 4550
+Wire Wire Line
+	5800 4850 5800 4550
+$Comp
+L power:GND #PWR0101
+U 1 1 60A18882
+P 5600 5800
+F 0 "#PWR0101" H 5600 5550 50  0001 C CNN
+F 1 "GND" H 5605 5627 50  0000 C CNN
+F 2 "" H 5600 5800 50  0001 C CNN
+F 3 "" H 5600 5800 50  0001 C CNN
+	1    5600 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4550 5600 5050
+Wire Wire Line
+	5700 4550 5700 5050
+Wire Wire Line
+	5700 5050 5600 5050
+Connection ~ 5600 5050
+Wire Wire Line
+	5600 5050 5600 5700
+Wire Wire Line
+	3450 4550 3450 2950
+Wire Wire Line
+	3450 2950 4350 2950
+Wire Wire Line
+	5600 2950 5600 3150
+Wire Wire Line
+	3350 2850 4450 2850
+Wire Wire Line
+	5700 2850 5700 3150
+Connection ~ 3200 4550
+Wire Wire Line
+	3200 4550 3450 4550
+$Comp
+L Device:R R2
+U 1 1 60A1AC98
+P 3650 4250
+F 0 "R2" V 3550 4250 50  0000 C CNN
+F 1 "22K" V 3750 4250 50  0000 C CNN
+F 2 "resistors:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3580 4250 50  0001 C CNN
+F 3 "~" H 3650 4250 50  0001 C CNN
+	1    3650 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60A1BF63
+P 3650 3850
+F 0 "R1" V 3550 3850 50  0000 C CNN
+F 1 "22K" V 3750 3850 50  0000 C CNN
+F 2 "resistors:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3580 3850 50  0001 C CNN
+F 3 "~" H 3650 3850 50  0001 C CNN
+	1    3650 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 5250 5800 4850
+Connection ~ 5800 4850
+Wire Wire Line
+	3750 5250 5800 5250
+$Comp
+L Device:C C3
+U 1 1 60A20C7A
+P 3600 5250
+F 0 "C3" V 3348 5250 50  0000 C CNN
+F 1 "47pF" V 3439 5250 50  0000 C CNN
+F 2 "capacitors:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 3638 5100 50  0001 C CNN
+F 3 "~" H 3600 5250 50  0001 C CNN
+	1    3600 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 4550 3200 5250
+Wire Wire Line
+	3200 5250 3450 5250
+Wire Wire Line
+	2350 4250 3500 4250
+Wire Wire Line
+	2350 3050 3000 3050
+Wire Wire Line
+	2350 4850 3750 4850
+Wire Wire Line
+	2350 3850 3500 3850
+$Comp
+L Connector_Generic:Conn_01x20 J1
+U 1 1 60A0B832
+P 2150 4050
+F 0 "J1" H 2068 2825 50  0000 C CNN
+F 1 "Conn_01x20" H 2068 2916 50  0000 C CNN
+F 2 "connectors:20-pin-2.54-edge-connector" H 2150 4050 50  0001 C CNN
+F 3 "~" H 2150 4050 50  0001 C CNN
+	1    2150 4050
+	-1   0    0    1   
+$EndComp
+Text Label 2500 4450 0    50   ~ 0
+L_GAIN_WIPER
+Wire Wire Line
+	3200 4450 3200 4550
+Wire Wire Line
+	2350 4450 3200 4450
+Wire Wire Line
+	2350 4050 3350 4050
+$Comp
+L Device:C C4
+U 1 1 60A2CC00
+P 3800 5500
+F 0 "C4" V 3548 5500 50  0000 C CNN
+F 1 "47pF" V 3639 5500 50  0000 C CNN
+F 2 "capacitors:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 3838 5350 50  0001 C CNN
+F 3 "~" H 3800 5500 50  0001 C CNN
+	1    3800 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 4050 3350 5500
+Wire Wire Line
+	3350 5500 3650 5500
+Connection ~ 3350 4050
+Wire Wire Line
+	3950 5500 5900 5500
+Wire Wire Line
+	5900 5500 5900 4650
+Connection ~ 5900 4650
+Wire Wire Line
+	2350 4550 2400 4550
+Wire Wire Line
+	3350 4050 3350 3750
+Wire Wire Line
+	3350 3750 3350 2850
+Connection ~ 3350 3750
+Wire Wire Line
+	2350 3750 2400 3750
+Wire Wire Line
+	2350 4650 3500 4650
+Wire Wire Line
+	2350 4750 2400 4750
+Wire Wire Line
+	2400 4750 2400 4550
+Connection ~ 2400 4750
+Wire Wire Line
+	2400 4750 2500 4750
+Connection ~ 2400 4550
+Wire Wire Line
+	2400 4550 3200 4550
+Wire Wire Line
+	2350 3950 2400 3950
+Wire Wire Line
+	2400 3950 2400 3750
+Connection ~ 2400 3950
+Wire Wire Line
+	2400 3950 2500 3950
+Connection ~ 2400 3750
+Wire Wire Line
+	2400 3750 3350 3750
+Wire Wire Line
+	4350 2950 4350 4950
+Wire Wire Line
+	2350 4950 4350 4950
+Connection ~ 4350 2950
+Wire Wire Line
+	4350 2950 5600 2950
+Wire Wire Line
+	4450 2850 4450 4150
+Wire Wire Line
+	2350 4150 4450 4150
+Connection ~ 4450 2850
+Wire Wire Line
+	4450 2850 5700 2850
+Wire Wire Line
+	4150 4850 5800 4850
+Wire Wire Line
+	4050 4850 4150 4850
+Connection ~ 4150 4850
+Wire Wire Line
+	3800 4250 4150 4250
+Wire Wire Line
+	4150 4250 4150 4850
+Wire Wire Line
+	4250 4650 5900 4650
+Wire Wire Line
+	3800 4650 4250 4650
+Connection ~ 4250 4650
+Wire Wire Line
+	3800 3850 4250 3850
+Wire Wire Line
+	4250 3850 4250 4650
+Wire Wire Line
+	2350 3450 2900 3450
+Wire Wire Line
+	2500 3250 2350 3250
+Wire Wire Line
+	2350 3250 1850 3250
+Wire Wire Line
+	1850 3250 1850 3650
+Wire Wire Line
+	1850 5700 5600 5700
+Connection ~ 2350 3250
+Connection ~ 5600 5700
+Wire Wire Line
+	5600 5700 5600 5800
+Wire Wire Line
+	2500 3650 2350 3650
+Wire Wire Line
+	2350 3650 1850 3650
+Connection ~ 2350 3650
+Connection ~ 1850 3650
+Wire Wire Line
+	1850 3650 1850 4350
+Wire Wire Line
+	2500 4350 2350 4350
+Wire Wire Line
+	2350 4350 1850 4350
+Connection ~ 2350 4350
+Connection ~ 1850 4350
+Wire Wire Line
+	1850 4350 1850 5700
+$Comp
+L Device:CP C1
+U 1 1 60A46E7A
+P 2750 2600
+F 0 "C1" V 2495 2600 50  0000 C CNN
+F 1 "100nF" V 2586 2600 50  0000 C CNN
+F 2 "capacitors:CP_Radial_D5.0mm_P2.50mm" H 2788 2450 50  0001 C CNN
+F 3 "~" H 2750 2600 50  0001 C CNN
+	1    2750 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 60A4A766
+P 2850 2200
+F 0 "C2" V 3105 2200 50  0000 C CNN
+F 1 "100nF" V 3014 2200 50  0000 C CNN
+F 2 "capacitors:CP_Radial_D5.0mm_P2.50mm" H 2888 2050 50  0001 C CNN
+F 3 "~" H 2850 2200 50  0001 C CNN
+	1    2850 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 2200 3000 3050
+Connection ~ 3000 3050
+Wire Wire Line
+	3000 3050 5400 3050
+Wire Wire Line
+	2700 2200 1850 2200
+Wire Wire Line
+	1850 2200 1850 2600
+Connection ~ 1850 3250
+Wire Wire Line
+	2600 2600 1850 2600
+Connection ~ 1850 2600
+Wire Wire Line
+	1850 2600 1850 3250
+Wire Wire Line
+	2900 2600 2900 3450
+Connection ~ 2900 3450
+Wire Wire Line
+	2900 3450 3850 3450
+$EndSCHEMATC
