@@ -1,0 +1,56 @@
+( pcb2gcode 2.4.0 )
+( Software-independent Gcode )
+
+( This file uses only one drill bit. Forced by 'onedrill' option )
+
+G94       (Millimeters per minute feed rate.)
+G21       (Units == Millimeters.)
+G91.1     (Incremental arc distance mode.)
+G90       (Absolute coordinates.)
+G00 S10000     (RPM spindle speed.)
+
+G00 Z10.00000 (Retract)
+T1
+M5      (Spindle stop.)
+G04 P1.00000
+(MSG, Change tool bit to drill size 0.8001mm)
+M6      (Tool change.)
+M0      (Temporary machine stop.)
+M3      (Spindle on clockwise.)
+G0 Z5.00000
+G04 P1.00000
+
+G81 R5.00000 Z-2.50000 F1000.00000 X13.11500 Y13.11500
+X13.11500 Y8.03500
+X20.73500 Y13.11500
+X20.73500 Y20.73500
+X13.11500 Y20.73500
+X13.11500 Y25.81500
+X16.83356 Y26.14520
+X20.73500 Y25.81500
+X30.89500 Y25.81500
+X35.89626 Y25.81500
+X30.89500 Y20.73500
+X35.89626 Y20.73500
+X37.24500 Y15.65500
+X34.70500 Y15.65500
+X32.16500 Y15.65500
+X29.62500 Y15.65500
+X20.73500 Y8.03500
+X29.62500 Y8.03500
+X32.16500 Y8.03500
+X34.70500 Y8.03500
+X37.24500 Y8.03500
+X44.86500 Y8.03500
+X47.36436 Y8.03500
+X44.90564 Y25.81500
+X47.40500 Y25.81500
+G80
+
+G00 Z10.000 ( All done -- retract )
+
+M5      (Spindle off.)
+G04 P1.000000
+M9      (Coolant off.)
+M2      (Program end.)
+
